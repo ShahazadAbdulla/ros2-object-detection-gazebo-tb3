@@ -147,7 +147,7 @@ This workspace (`ros2_ws`) utilizes the following key packages located in `src/`
 *   **YOLO Models & Ultralytics:** Based on the work by Ultralytics and the original YOLO authors. ([Ultralytics](https://ultralytics.com/))
 *   **ROS 2 Tutorials & Community:** Leveraging concepts and tools from the broader ROS 2 ecosystem and documentation.
 
-## Next Steps / Future Work
+## Next Steps / Future Work (Welcome to try)
 
 *   **(Self-Study/Exploration):** Learn more detailed SDF/URDF syntax for creating custom robots and worlds.
 *   **Performance Tuning:** Experiment with different YOLO model sizes (e.g., YOLOv8n).
