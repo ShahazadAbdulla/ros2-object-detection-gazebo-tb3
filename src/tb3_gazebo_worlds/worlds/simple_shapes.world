@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="simple_shapes_world">
+
+    <!-- Basic Physics and Scene Settings (Using Ignition Gazebo Systems) -->
+    <physics name="default_physics" default="0" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin
+      filename="libignition-gazebo-physics-system.so"
+      name="ignition::gazebo::systems::Physics">
+    </plugin>
+    <plugin
+      filename="libignition-gazebo-scene-broadcaster-system.so"
+      name="ignition::gazebo::systems::SceneBroadcaster">
+    </plugin>
+    <plugin
+      filename="libignition-gazebo-user-commands-system.so"
+      name="ignition::gazebo::systems::UserCommands">
+    </plugin>
+    <plugin
+      filename="libignition-gazebo-sensors-system.so"
+      name="ignition::gazebo::systems::Sensors">
+        <render_engine>ogre2</render_engine>
+    </plugin>
+
+    <!-- Essential ROS Integration Plugins -->
+    <plugin filename="libgazebo_ros_init.so" name="gazebo_ros_init">
+        <ros>
+            <namespace>/</namespace>
+        </ros>
+    </plugin>
+    <plugin filename="libgazebo_ros_factory.so" name="gazebo_ros_factory">
+        <ros>
+            <namespace>/</namespace>
+        </ros>
+    </plugin>
+
+    <!-- Ground Plane from Fuel -->
+    <include>
+      <uri>model://GroundPlane</uri>
+      <name>ground_plane</name> <!-- Give it a unique name -->
+    </include>
+
+    <!-- Sun (Directional Light) from Fuel -->
+    <include>
+      <uri>model://Sun</uri>
+      <name>sun</name> <!-- Give it a unique name -->
+    </include>
+
+    <!-- === Recognizable Objects for YOLO === -->
+
+    <!-- Coke Can -->
+    <include>
+      <name>coke_can</name>
+      <uri>model://CokeCan</uri>
+      <pose>1.5 1.0 0.1 0 0 0</pose> <!-- x y z roll pitch yaw -->
+    </include>
+
+    <!-- Stop Sign -->
+    <include>
+      <name>stop_sign</name>
+      <uri>model://StopSign</uri>
+      <pose>1.5 -1.5 0.05 0 0 0</pose>
+    </include>
+
+    <!-- Bookshelf -->
+    <include>
+       <name>bookshelf</name>
+       <uri>model://BookShelf</uri>
+       <pose>-1.0 2.0 0.0 0 0 1.5707</pose> <!-- Rotated 90 deg (pi/2) -->
+    </include>
+
+    <!-- Construction Barrel -->
+    <include>
+       <name>construction_barrel</name>
+       <uri>model://ConstructionBarrel</uri>
+       <pose>-1.5 -1.5 0.0 0 0 0</pose>
+    </include>
+
+    <!-- Simple Table -->
+    <include>
+       <name>table</name>
+       <uri>model://Table</uri>
+       <pose>0.0 2.5 0.0 0 0 0</pose>
+    </include>
+
+    <!-- Simple Chair -->
+    <include>
+       <name>chair</name>
+       <uri>model://Chair</uri> <!-- There are various chair models -->
+       <pose>-2.0 0.0 0.0 0 0 -1.5707</pose> <!-- Rotated -90 deg -->
+    </include>
+
+    <!-- Backpack (Example of another common item) -->
+    <!-- Search Fuel for "Backpack" -->
+    <!--
+    <include>
+       <name>backpack_1</name>
+       <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Backpack</uri>
+       <pose>0.0 -2.5 0.1 0 0 0</pose>
+    </include>
+    -->
+
+  </world>
+</sdf>
