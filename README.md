@@ -4,12 +4,12 @@ This ROS 2 workspace contains Project of a guided learning journey, demonstratin
 
 <table>
   <tr>
-    <td><img src="![WhatsApp Image 2025-05-01 at 12 50 47(2)](https://github.com/user-attachments/assets/1caa4e0c-a469-4670-a01e-adf03fc5bdbc)" alt="Description for Image 1" width="400"/></td>
-    <td><img src="![WhatsApp Image 2025-05-01 at 12 50 47(1)](https://github.com/user-attachments/assets/f4d44fbb-de6d-412e-82ab-1eb8e2238f30)" alt="Description for Image 2" width="400"/></td>
+    <td><img src="https://github.com/user-attachments/assets/1caa4e0c-a469-4670-a01e-adf03fc5bdbc" alt="Description for Image 1" width="400"/></td>
+    <td><img src="https://github.com/user-attachments/assets/f4d44fbb-de6d-412e-82ab-1eb8e2238f30" alt="Description for Image 2" width="400"/></td>
   </tr>
   <tr>
-    <td><img src="![WhatsApp Image 2025-05-01 at 12 50 47](https://github.com/user-attachments/assets/57261b9c-4379-4101-b031-811989dbe09e)" alt="Description for Image 3" width="400"/></td>
-    <td><img src="![WhatsApp Image 2025-05-01 at 12 50 24](https://github.com/user-attachments/assets/5bf9e977-d7a2-40e9-98d5-bd16b1f31a3d)" alt="Description for Image 4" width="400"/></td>
+    <td><img src="https://github.com/user-attachments/assets/57261b9c-4379-4101-b031-811989dbe09e" alt="Description for Image 3" width="400"/></td>
+    <td><img src="https://github.com/user-attachments/assets/5bf9e977-d7a2-40e9-98d5-bd16b1f31a3d" alt="Description for Image 4" width="400"/></td>
   </tr>
 </table>
 
